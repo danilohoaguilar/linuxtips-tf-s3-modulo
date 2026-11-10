@@ -1,0 +1,6 @@
+module "s3-bucket" {
+  source        = "terraform-aws-modules/s3-bucket/aws"
+  version       = "5.17.0"
+  bucket        = "test-atlatnis-hodanslab"
+  force_destroy = true
+}
